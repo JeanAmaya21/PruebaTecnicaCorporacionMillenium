@@ -1,0 +1,78 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="title">Mantenimiento Estudiante</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="title">{{accion}} Estudiante</h5>
+
+                    <form [formGroup]="form" (ngSubmit)="guardarEstudiante()">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text " id="basic-addon1"><i class="fa-solid fa-user"
+                                    [class.green-icon]="this.form.get('nombre')?.valid"
+                                    [class.red-icon]="this.form.get('nombre')?.invalid && this.form.get('nombre')?.touched"></i></span>
+                            <input formControlName="nombre" type="text" class="form-control"
+                                placeholder="Nombre de estudiante" aria-label="nombre" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text " id="basic-addon1"><i class="fa-solid fa-user"
+                                    [class.green-icon]="this.form.get('primer_apellido')?.valid"
+                                    [class.red-icon]="this.form.get('primer_apellido')?.invalid && this.form.get('primer_apellido')?.touched"></i></span>
+                            <input formControlName="primer_apellido" type="text" class="form-control"
+                                placeholder="Primer apellido" aria-label="apellido1" aria-describedby="basic-addon1"
+                                maxlength="25" minlength="2">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text " id="basic-addon1"><i class="fa-solid fa-user"
+                                    [class.green-icon]="this.form.get('segundo_apellido')?.valid"
+                                    [class.red-icon]="this.form.get('segundo_apellido')?.invalid && this.form.get('segundo_apellido')?.touched"></i></span>
+                            <input formControlName="segundo_apellido" type="text" class="form-control"
+                                placeholder="Segundo apellido" aria-label="apellido2" aria-describedby="basic-addon1"
+                                maxlength="25" minlength="2">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text " id="basic-addon1"><i class="fa-solid fa-user"
+                                    [class.green-icon]="this.form.get('edad')?.valid"
+                                    [class.red-icon]="this.form.get('edad')?.invalid && this.form.get('edad')?.touched"></i></span>
+                            <input formControlName="edad" type="number" min="2" max="23" maxlength="2" class="form-control"
+                                placeholder="Edad del estudiante" aria-label="Edad" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="d-grid gap-2 ">
+                            <button [disabled]="this.form.invalid" type="submit" class="btn btn-success btn-lg"><i class="fa-solid fa-database"></i>
+                                Agregar</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="title">Lista de Estudiantes</h5>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let estudiante of listEstudiantes;">
+                                <td>{{estudiante.estudianteId}}</td>
+                                <td>{{estudiante.nombre}}</td>
+                                <td>{{estudiante.primerApellido}}</td>
+                                <td>{{estudiante.segundoApellido}}</td>
+                                <td>{{estudiante.edad}}</td>
+                                <td><i (click)="editEstudiante(estudiante)" class="far fa-edit text-info"></i></td>
+                                <td (click)="eliminarEstudiante(estudiante.estudianteId)"><i class="far fa-trash-alt text-danger"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

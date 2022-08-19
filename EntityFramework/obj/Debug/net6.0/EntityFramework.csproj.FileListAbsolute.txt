@@ -1,0 +1,14 @@
+C:\Users\jeanf\source\repos\API\EntityFramework\bin\Debug\net6.0\EntityFramework.deps.json
+C:\Users\jeanf\source\repos\API\EntityFramework\bin\Debug\net6.0\EntityFramework.runtimeconfig.json
+C:\Users\jeanf\source\repos\API\EntityFramework\bin\Debug\net6.0\EntityFramework.dll
+C:\Users\jeanf\source\repos\API\EntityFramework\bin\Debug\net6.0\EntityFramework.pdb
+C:\Users\jeanf\source\repos\API\EntityFramework\obj\Debug\net6.0\EntityFramework.csproj.AssemblyReference.cache
+C:\Users\jeanf\source\repos\API\EntityFramework\obj\Debug\net6.0\EntityFramework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jeanf\source\repos\API\EntityFramework\obj\Debug\net6.0\EntityFramework.AssemblyInfoInputs.cache
+C:\Users\jeanf\source\repos\API\EntityFramework\obj\Debug\net6.0\EntityFramework.AssemblyInfo.cs
+C:\Users\jeanf\source\repos\API\EntityFramework\obj\Debug\net6.0\EntityFramework.csproj.CoreCompileInputs.cache
+C:\Users\jeanf\source\repos\API\EntityFramework\obj\Debug\net6.0\EntityFramework.dll
+C:\Users\jeanf\source\repos\API\EntityFramework\obj\Debug\net6.0\refint\EntityFramework.dll
+C:\Users\jeanf\source\repos\API\EntityFramework\obj\Debug\net6.0\EntityFramework.pdb
+C:\Users\jeanf\source\repos\API\EntityFramework\obj\Debug\net6.0\EntityFramework.genruntimeconfig.cache
+C:\Users\jeanf\source\repos\API\EntityFramework\obj\Debug\net6.0\ref\EntityFramework.dll
